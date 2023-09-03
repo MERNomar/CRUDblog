@@ -2,14 +2,21 @@ const express = require('express')
 let app = express()
 
 app.set('view engine' , 'ejs')
+app.use(express.static(__dirname + '/public'));
 
 
-app.listen(8080 , () => {
-    console.log("listening in http://localhost:8080")
+let blogs = [
+    {blog : "how to create express app" , snippet : "search google you dork"},
+    {blog : "how to create mongodb database" , snippet : "just search google !!"},
+    {blog : "now to create react app" , snippet : "just write npm create react app dumpass !"}
+]
+
+app.listen(3000 , () => {
+    console.log("listening in http://localhost:3000")
 })
 
 app.get('/' , (req , res) => {
-    res.render('index')
+    res.render('index' , {blogs})
 })
 
 app.get('/about' , (req , res) => {

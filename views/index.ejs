@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
- <%- import('./partials/head') %>
+ <%- include('./partials/head.ejs') %>
 <body>
-    
+<%- include('./partials/header.ejs') %>
+<main>
+<% if (blogs.length > 0){ %>
+ <% blogs.forEach(blogs => {%>   
+<h3><%= blogs.blog %></h3>
+<p><%= blogs.snippet %></p>    
+<% })}else { %>
+    <p>there is no blogs to be shown !</p>
+<% } %>
+</main>
 </body>
+<%- include('./partials/footer.ejs') %>
 </html>

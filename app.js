@@ -13,15 +13,17 @@ app.get('/' , (req , res) => {
 })
 
 app.get('/about' , (req , res) => {
-    res.sendFile('./about.html' , {root : __dirname})
+    res.render('about')
 })
 
-app.get('/404' , (req , res) => {
-    res.sendFile('./404.html' , {root : __dirname})
+app.get('/newblog' , (req , res) => {
+    res.render('newblog')
 })
+
+
 
 
 
 app.use( (req , res) => {
-    res.status(404).sendFile('./404.html' , {root : __dirname})
+    res.status(404).render('404' )
 })

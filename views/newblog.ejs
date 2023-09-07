@@ -4,9 +4,11 @@
 <body>
 <%- include('./partials/header.ejs') %>
 <main>
-    <div> <span> Blog name : </span><input type="text" ></div> 
-    <div> <span> Blog content : </span><input type="text" ></div> 
-    <button type="submit">Submit</button>
+    <form action="/blogs" method="POST">
+    <div> <span> title : </span><input required name="title" type="text" ></div> 
+    <div> <span>  snippet : </span><input required name="snippet"   type="text" ></div> 
+    <div> <span> body : </span><input required name="body"   type="text" ></div> 
+    <button type="submit">Submit</button></form>
  
  </main>
 </body>

@@ -2,7 +2,6 @@
 html{
     background-color: aliceblue;
     font-family: 'Rubik', sans-serif;
-    overflow: hidden;
     margin: 0;
 
 }
@@ -22,6 +21,19 @@ html{
     background-color: rgb(27, 24, 21);
     font-weight: bolder;
 } 
+
+.delete {
+    background-color: rgb(160, 23, 23);
+    padding: 3px;
+    cursor: pointer;
+}
+
+:hover.delete{
+    background-color: brown;
+    padding: 3px;
+
+
+}
 
 ul{
     list-style-type: none;
@@ -66,4 +78,11 @@ h1{
     display: inline;
     margin-right: 50px;
 }
+
+.single {
+    all : unset;
+    cursor: pointer;
+    
+}
+
 

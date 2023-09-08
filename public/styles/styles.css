@@ -1,88 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 html{
-    background-color: aliceblue;
+    background-color: wheat;
     font-family: 'Rubik', sans-serif;
-    margin: 0;
-
 }
-
-.link{
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-    padding: 1px;
-} 
-
-:hover.link{
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-    padding: 1px;
-    background-color: rgb(27, 24, 21);
-    font-weight: bolder;
-} 
-
-.delete {
-    background-color: rgb(160, 23, 23);
-    padding: 3px;
-    cursor: pointer;
-}
-
-:hover.delete{
-    background-color: brown;
-    padding: 3px;
-
-
-}
-
-ul{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0;
-    display: inline;
-    margin-left: 1200px;
-
-}
-li{
-    margin-top: 10px;
-    display: inline;
-    padding: auto;
-    margin-left: 5px;
-    background-color: rgba(240, 248, 255, 0);
-
-}
-
-.header-link {
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-    padding: 1px;
-}
-
-header  {
-    padding-top: 5px;
+body { 
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
     display: flex;
-    background-color: rgba(3, 3, 3, 0.945);
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    background-color: rgb(117, 139, 139);
+    border: rgba(0, 0, 0, 0.123) solid;
+    text-align: center;
     align-items: center;
-    align-content: end;
-    float: top;
-    padding: 0px 10px;
-    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+header h1{
+    font-weight: bolder;
+    font-size: 50px;
+
+
+    
+
+}
+
+ a {
+    all: unset;
+    cursor : pointer;
+}
+
+header a:hover{
+    color: rgb(32, 27, 27);
+}
+
+ ul {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: bolder;
+}
+
+main { 
+    margin-left: 30px;
+}
+
+#navlist{
+    margin-left: auto;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.322);
+}
+
+.blog {
+    padding-left: 5px;
+    border-left: 2px  black solid ;
     margin-bottom: 10px;
-
-    
-
 }
 
-h1{
-    display: inline;
-    margin-right: 50px;
+.blog:hover {
+    padding-left: 5px;
+    border-left: 2px  rgb(68, 66, 66) solid ;
+    margin-bottom: 10px;
+    color: rgb(49, 48, 48);
 }
 
-.single {
-    all : unset;
-    cursor: pointer;
-    
+img {
+    margin-right: auto;
+    width: 30px;
+    color : red;
 }
 
-
+#content{
+    display: inline-block;
+}

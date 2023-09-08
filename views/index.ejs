@@ -5,10 +5,12 @@
 <%- include('./partials/header.ejs') %>
 <main>
 <% if (blogs.length > 0){ %>
- <% blogs.forEach(blogs => {%>   
+ <% blogs.forEach(blogs => {%> 
+<div class="blog">
 <a class="single" href="/blogs/<%= blogs._id  %>"><h3><%= blogs.title %></h3>
 <p><%= blogs.snippet %></p>
-<p><%= blogs.body %></p> </a>   
+</a> 
+</div>  
 <% })}else { %>
     <p>there is no blogs to be shown !</p>
 <% } %>
